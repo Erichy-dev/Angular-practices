@@ -1,0 +1,8 @@
+<div class="flex flex-row">
+  <section class="flex-1 mr-10">
+    <app-editor (ChildChangesHistory)="emitParentHistory($event)"></app-editor>
+  </section>
+  <section class="flex-1">
+    <app-output [parentHistory]="history"></app-output>
+  </section>
+</div>
