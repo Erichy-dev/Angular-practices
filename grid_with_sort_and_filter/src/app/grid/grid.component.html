@@ -1,0 +1,14 @@
+<table class="m-5 w-96 h-52 border border-green-600">
+  <thead>
+    <tr>
+      <th (click)="orderByName()" class="bg-green-600 bg-clip-content">Name{{nIcon}}</th><!--174 & 175-->
+      <th (click)="orderByPower()" class="bg-green-600 bg-clip-content">Power{{pIcon}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let trows of gridData">
+      <td class="bg-slate-200 bg-clip-content">{{trows.name}}</td>
+      <td class="bg-slate-200 bg-clip-content">{{trows.power}}</td>
+    </tr>
+  </tbody>
+</table>
