@@ -1,0 +1,9 @@
+<table class='w-60'>
+  <tbody>
+    <tr *ngFor="let number of rowsArray" key={number.toString()} class='border border-black'>
+      <td>{{number}} 
+        <button class='bg-red-700 w-5 m-1'>X</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
