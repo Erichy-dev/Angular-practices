@@ -13,7 +13,7 @@ export class EditorComponent implements OnInit {
   }
 
   @Output() ChildChangesHistory = new EventEmitter<string>();
-  emitHistory(event: any){
-    this.ChildChangesHistory.emit(event.target.value)
+  emitHistory(event: Event){
+    this.ChildChangesHistory.emit((event.target as HTMLInputElement).value)
   }
 }
